@@ -1,16 +1,124 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <title>HTML Assignment #3</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        }
 
+        td, th {
+            border: 1px solid black;
+            padding: 2px;
+        }
+
+        .green {
+            background-color: green;
+            height: 15px;
+        }
+
+        .blue {
+            background-color: blue;
+            height: 15px;
+        }
+
+        .img-cell {
+            text-align: center;
+        }
+
+        img {
+            width: 180px;
+            height: 130px;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- TABLE 1 -->
+    <table>
+        <caption><b>HTML Assignment #3</b></caption>
+
+        <tr>
+            <td>left</td>
+            <td align="center">center</td>
+            <td align="right">right</td>
+        </tr>
+
+        <tr>
+            <td>left</td>
+            <td align="center">center</td>
+            <td align="right">right</td>
+        </tr>
+
+        <tr>
+            <td>left</td>
+            <td align="center">center</td>
+            <td align="right">right</td>
+        </tr>
+    </table>
+
+    <!-- TABLE 2 -->
+    <table>
+        <tr>
+            <td colspan="6"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td colspan="3" rowspan="2"></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+
+    <!-- TABLE 3 -->
+    <table>
+        <tr>
+            <td colspan="3" class="green"></td>
+        </tr>
+
+        <tr>
+            <td style="width:35%"></td>
+
+            <td class="img-cell">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"
+                     alt="Michael Jordan">
+            </td>
+
+            <td style="width:35%"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="blue"></td>
+        </tr>
+    </table>
 
 </body>
-
 </html>
