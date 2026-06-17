@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML Assignment #3</title>
+    <title>HTML Assignment 3</title>
     <style>
-        table {
-           border-collapse:collapse;
-            width: 100%;
-            margin-bottom: 30px;
+        table.middle {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+            width: 90%;
+            margin: 20px auto;
         }
 
         td, th {
             border: 1px solid black;
             padding: 1px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
         }
 
         .green {
@@ -24,97 +34,82 @@
             height: 15px;
         }
 
-        .img-cell {
+        h1 {
             text-align: center;
         }
 
         img {
-            width: 180px;
-            height: 130px;
+            width: 200px;
+            height: 150px;
         }
     </style>
 </head>
 <body>
 
-    <!-- TABLE 1 -->
-    <table>
-        <caption><b>HTML Assignment #3</b></caption>
+    <h1>HTML Assignment #3</h1>
 
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
         <tr>
-            <td>left</td>
-            <td align="center">center</td>
-            <td align="right">right</td>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
-
         <tr>
             <td>left</td>
-            <td align="center">center</td>
-            <td align="right">right</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
         </tr>
-
         <tr>
             <td>left</td>
-            <td align="center">center</td>
-            <td align="right">right</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
         </tr>
     </table>
 
-    <!-- TABLE 2 -->
-    <table>
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
         <tr>
-            <td colspan="6"></td>
+            <td id="t21" colspan="6"></td>
         </tr>
-
         <tr>
             <td rowspan="4"></td>
             <td></td>
+            <td colspan="2"></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td rowspan="4"></td>
         </tr>
-
         <tr>
             <td></td>
-            <td colspan="3" rowspan="2"></td>
-            <td></td>
+            <td colspan="3"></td>
         </tr>
-
         <tr>
             <td></td>
-            <td></td>
+            <td colspan="3"></td>
         </tr>
-
         <tr>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td colspan="2"></td>
             <td></td>
         </tr>
-
         <tr>
             <td colspan="6"></td>
         </tr>
     </table>
 
-    <!-- TABLE 3 -->
-    <table>
+    <!-- Table 3 -->
+    <table id="table-3" class="middle">
         <tr>
             <td colspan="3" class="green"></td>
         </tr>
-
         <tr>
-            <td style="width:35%"></td>
-
-            <td class="img-cell">
+            <td></td>
+            <td id="t-image" class="center">
                 <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"
-                     alt="Michael Jordan"></img>
+                     alt="Basketball Image"></img>
             </td>
-
-            <td style="width:35%"></td>
+            <td></td>
         </tr>
-
         <tr>
             <td colspan="3" class="blue"></td>
         </tr>
